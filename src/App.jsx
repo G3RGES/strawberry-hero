@@ -5,7 +5,7 @@ import Hero from "./components/Hero";
 
 const App = () => {
   return (
-    <div className="bg-red-500">
+    <div className="">
       <Navbar />
       <Hero />
     </div>
