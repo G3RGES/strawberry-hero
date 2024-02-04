@@ -4,13 +4,13 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
   return (
-    <div className="">
-      <div className="container">
-        <div className="">
-          <h1 className="uppercase">
-            Straw<span className="">Berries</span>
+    <div className="text-white">
+      <div className="container bg-primary">
+        <div className="flex justify-between items-center">
+          <h1 className="uppercase text-4xl font-bold">
+            Straw<span className="font-normal">Berries</span>
           </h1>
-          <ul className="hidden lg:flex space-x-14">
+          <ul className="hidden lg:flex space-x-14 text-xl">
             <li className="">
               <a className="" href="#">
                 Home
@@ -27,8 +27,10 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
+          <div className="">
+            <GiHamburgerMenu className="cursor-pointer text-3xl" />
+          </div>
         </div>
-        <GiHamburgerMenu />
       </div>
     </div>
   );
