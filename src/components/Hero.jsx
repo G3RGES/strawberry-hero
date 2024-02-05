@@ -24,12 +24,12 @@ const Hero = () => {
           min-h-[650px] place-items-center  "
           >
             {/* text container */}
-            <div className="text-white ">
+            <div className="text-white space-y-4 p-4 md:mt-0">
               <h1 className="text-3xl pl-6 md:pl-16">01________</h1>
               <h1 className="text-5xl font-bold uppercase text-shadow">
                 A helthy fruit
               </h1>
-              <p className="">
+              <p className="text-sm ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Aspernatur soluta modi optio suscipit ex ipsum minus hic,
                 voluptates accusantium dolor!
@@ -46,6 +46,7 @@ const Hero = () => {
             <div className="md:hidden "></div>
           </div>
         </div>
+        <h1 className="uppercase text-center">Berries</h1>
       </section>
     </main>
   );
