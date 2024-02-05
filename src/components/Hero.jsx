@@ -19,11 +19,16 @@ const Hero = () => {
       >
         <div className="container">
           <Navbar />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
+          min-h-[650px] place-items-center  "
+          >
             {/* text container */}
             <div className="text-white ">
-              <h1 className="">01________</h1>
-              <h1 className="">A helthy fruit</h1>
+              <h1 className="text-3xl pl-6 md:pl-16">01________</h1>
+              <h1 className="text-5xl font-bold uppercase text-shadow">
+                A helthy fruit
+              </h1>
               <p className="">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Aspernatur soluta modi optio suscipit ex ipsum minus hic,
@@ -35,10 +40,10 @@ const Hero = () => {
             </div>
             {/* image container */}
             <div className="">
-              <img className="" src={HeroImg} alt="strawberry" />
+              <img className="w-[400px]  " src={HeroImg} alt="strawberry" />
             </div>
             {/* blank container */}
-            <div className=""></div>
+            <div className="md:hidden "></div>
           </div>
         </div>
       </section>
