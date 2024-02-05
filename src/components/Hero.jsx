@@ -12,7 +12,7 @@ import { FaInstagram } from "react-icons/fa6";
 
 const Hero = () => {
   return (
-    <main className="bg-primaryDark md:py-6 md:px-12">
+    <main className="bg-primaryDark md:py-6 md:px-12 text-white">
       <section
         className="relative min-h-[650px] bg-gradient-to-r from-primary
       to-secondary w-full md:rounded-xl shadow-md "
@@ -21,7 +21,7 @@ const Hero = () => {
           <Navbar />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {/* text container */}
-            <div className="">
+            <div className="text-white ">
               <h1 className="">01________</h1>
               <h1 className="">A helthy fruit</h1>
               <p className="">
@@ -29,10 +29,14 @@ const Hero = () => {
                 Aspernatur soluta modi optio suscipit ex ipsum minus hic,
                 voluptates accusantium dolor!
               </p>
-              <button className="">Shop Now</button>
+              <button className="border border-white px-4 py-2 rounded-lg">
+                Shop Now
+              </button>
             </div>
             {/* image container */}
-            <div className=""></div>
+            <div className="">
+              <img className="" src={HeroImg} alt="strawberry" />
+            </div>
             {/* blank container */}
             <div className=""></div>
           </div>
