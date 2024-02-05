@@ -40,13 +40,23 @@ const Hero = () => {
             </div>
             {/* image container */}
             <div className="">
-              <img className="w-[400px]  " src={HeroImg} alt="strawberry" />
+              <img
+                className="w-[400px] img-shadow relative z-[1]"
+                src={HeroImg}
+                alt="strawberry"
+              />
             </div>
             {/* blank container */}
             <div className="md:hidden "></div>
           </div>
         </div>
-        <h1 className="uppercase text-center">Berries</h1>
+        <h1
+          className="uppercase text-center text-[80px] font-bold
+         sm:text-[120px] md:text-[150px] xl:text-[180px]
+          absolute bottom-0 w-full z-0 text-shadow"
+        >
+          Berries
+        </h1>
       </section>
     </main>
   );
