@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-const Navbar = () => {
+const Navbar = ({ setSidebar, sidebar }) => {
   return (
     <div className="text-white py-2 absolute top-0 left-0 w-full z-20">
       <div className="container ">
@@ -27,9 +28,9 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
-          <div className="">
+          <button className="" onClick={() => setSidebar(!sidebar)}>
             <GiHamburgerMenu className="cursor-pointer text-3xl" />
-          </div>
+          </button>
         </div>
       </div>
     </div>
