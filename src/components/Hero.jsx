@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useState } from "react";
 // components
 import Navbar from "./Navbar";
 
@@ -11,6 +11,8 @@ import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 
 const Hero = () => {
+  const [sidebar, setSidebar] = useState(false);
+
   return (
     <main className="bg-primaryDark md:py-6 md:px-12 text-white">
       <section
@@ -18,13 +20,13 @@ const Hero = () => {
       to-secondary w-full md:rounded-xl shadow-md "
       >
         <div className="container">
-          <Navbar />
+          <Navbar setSidebar={setSidebar} sidebar={sidebar} />
           <div
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
           min-h-[650px] place-items-center  "
           >
             {/* text container */}
-            <div className="text-white space-y-4 p-4 md:mt-0">
+            <div className="text-white space-y-4 p-4 md:mt-0 mt-[100px]">
               <h1 className="text-3xl pl-6 md:pl-16">01________</h1>
               <h1 className="text-5xl font-bold uppercase text-shadow">
                 A helthy fruit
@@ -57,6 +59,41 @@ const Hero = () => {
         >
           Berries
         </h1>
+        {sidebar && (
+          <div
+            className="absolute top-0 right-0 w-[120px] 
+          h-full bg-gradient-to-b from-primary to-secondary z-10 rounded-tr-xl 
+          rounded-br-xl"
+          >
+            <div className="w-full h-full flex flex-col justify-center items-center gap-6">
+              {/* line */}
+              <div className="w-[1px] h-[70px] bg-white  "></div>
+
+              {/* socials */}
+              <div className="inline-block p-2 rounded-full border border-white">
+                <a className="" href="https://www.facebook.com/gergesnashaat95">
+                  <FaFacebookF className="text-2xl" />
+                </a>
+              </div>
+              <div className="inline-block p-2 rounded-full border border-white">
+                <a className="" href="https://www.instagram.com/gergesnashaat/">
+                  <FaInstagram className="text-2xl" />
+                </a>
+              </div>
+              <div className="inline-block p-2 rounded-full border border-white">
+                <a
+                  className=""
+                  href="https://www.linkedin.com/in/gergesnashaat/"
+                >
+                  <FaLinkedinIn className="text-2xl" />
+                </a>
+              </div>
+
+              {/* line */}
+              <div className="w-[1px] h-[70px] bg-white  "></div>
+            </div>
+          </div>
+        )}
       </section>
     </main>
   );
