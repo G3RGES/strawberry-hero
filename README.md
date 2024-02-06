@@ -8,4 +8,4 @@
 
 #### this is a simple tutorial you can use in your project
 
-#### you can find the tutorial video [here][https://youtu.be/85Qt7HH_vaQ?si=Smd_Vsz1UYUw8w0r]
+#### you can find the tutorial video [here](https://youtu.be/85Qt7HH_vaQ?si=Smd_Vsz1UYUw8w0r)
