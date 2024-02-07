@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect } from "react";
 
-// import Navbar from "./components/Navbar";
+// import Hero from "./components/Hero";
 import Hero from "./components/Hero";
 
 // AOS
