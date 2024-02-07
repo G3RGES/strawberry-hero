@@ -21,7 +21,6 @@ const App = () => {
 
   return (
     <div className="">
-      {/* <Navbar /> */}
       <Hero />
     </div>
   );
