@@ -27,22 +27,33 @@ const Hero = () => {
           >
             {/* text container */}
             <div className="text-white space-y-4 p-4 md:mt-0 mt-[100px]">
-              <h1 className="text-3xl pl-6 md:pl-16">01________</h1>
-              <h1 className="text-5xl font-bold uppercase text-shadow">
+              <h1 className="text-3xl pl-6 md:pl-16" data-aos="fade-up">
+                01________
+              </h1>
+              <h1
+                className="text-5xl font-bold uppercase text-shadow"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
                 A helthy fruit
               </h1>
-              <p className="text-sm ">
+              <p className="text-sm" data-aos="fade-up" data-aos-delay="600">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Aspernatur soluta modi optio suscipit ex ipsum minus hic,
                 voluptates accusantium dolor!
               </p>
-              <button className="border border-white px-4 py-2 rounded-lg">
+              <button
+                className="border border-white px-4 py-2 rounded-lg"
+                data-aos="fade-up"
+                data-aos-delay="900"
+              >
                 Shop Now
               </button>
             </div>
             {/* image container */}
             <div className="">
               <img
+                data-aos="zoom-in"
                 className="w-[400px] img-shadow relative z-[1]"
                 src={HeroImg}
                 alt="strawberry"
@@ -53,6 +64,7 @@ const Hero = () => {
           </div>
         </div>
         <h1
+          data-aos="zoom-out"
           className="uppercase text-center text-[80px] font-bold
          sm:text-[120px] md:text-[150px] xl:text-[180px]
           absolute bottom-0 w-full z-0 text-shadow"
